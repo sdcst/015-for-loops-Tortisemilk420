@@ -23,3 +23,19 @@ Enter total payments for month(2)  : 75
 Your closing balance is $51.51
 
 """
+total = 0.0
+
+z = int(input("\nEnter the total months : "))
+   
+   
+for i in range(z):
+    x = int(input("\nEnter the total purchases for this month : "))
+    y = int(input("\nEnter the total payments  for this month : "))
+    total = total + x - y 
+else:
+    print(f"Your subtotal is {total}")
+    intrest = round(total * 0.02)
+    print(f"Your intrest is {intrest}")
+    gtotal = total + intrest 
+    print (f"Your total is {gtotal}")
+
